@@ -1,0 +1,62 @@
+:root {
+  --back-color: #81899b;
+  --primary-color: #080808;
+  --header-back: #1a1d24;
+  --header-text: #eee;
+}
+
+body {
+  background-color: var(--back-color);
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--header-back);
+  color: var(--header-text);
+}
+
+.box img {
+  border: 2px solid var(--primary-color);
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.showcase-text {
+  text-align: center;
+  margin-top: 40px;
+  animation: slideInFromRight 1s ease-in;
+}
